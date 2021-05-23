@@ -1,0 +1,6 @@
+baseurl: /35mm
+
+collections:
+  galleries:
+    output: true
+    permalink: /:path/

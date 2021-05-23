@@ -1,0 +1,27 @@
+---
+layout: home
+title: Home
+---
+
+{% include header.html %}
+
+
+
+<div class ="image-gallery">
+    {% assign sorted = site.static_files | sort: 'modified_time' | reverse %}
+    {% for image in sorted %}
+    {% if image.path contains 'assets/images' %}
+        <img class="myImages" id="myImg" src="{{site.baseurl}}{{image.path}}">
+
+    {% endif %}
+    {% endfor %}
+    </div>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+      
+
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/modal.js"></script>
