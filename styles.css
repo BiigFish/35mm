@@ -30,21 +30,27 @@ a {
 
 
 
-
+.image-gallery {
+  margin: 5px;
+}
 
 /* MODAL STUFF - COPIED AND I HAVE NO CLUE WHAT THEY DO */
 #myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    width: calc(33% - 20px);
-    height: calc(30vw * 0.66);
     object-fit:contain;
+    width: 33%;
+    height: calc(33vw * 0.66);
+    margin: 2x 0;
+    /* with margin but the pictures had their own whitespace
+    width: calc(33% - 20px);
     margin: 10px;
+    */
   }
   @media only screen and (max-width: 900px) {
     #myImg {
-      width: calc(49% - 20px);
+      width: 50%;
       height: calc(50vw * 0.66);
     }
   }
