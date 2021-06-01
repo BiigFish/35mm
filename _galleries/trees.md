@@ -1,4 +1,0 @@
----
-layout: galleries
-title: Trees
----

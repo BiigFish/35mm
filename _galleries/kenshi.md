@@ -1,4 +1,4 @@
 ---
 layout: galleries
-title: Kenshi
+title: Test
 ---
