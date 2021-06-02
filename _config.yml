@@ -1,4 +1,6 @@
 baseurl: /35mm
+  
+url: "https://www.35mm.website"
 
 collections:
   galleries:
