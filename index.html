@@ -11,7 +11,7 @@ title: Home
     {% assign sorted = site.static_files | sort: 'modified_time' | reverse %}
     {% for image in sorted %}
     {% if image.path contains 'assets/images' %}
-        <img class="myImages" id="myImg" src="{{site.baseurl}}{{image.path}}">
+        <img class="myImages" id="myImg" src="{{image.path}}">
 
     {% endif %}
     {% endfor %}
@@ -24,4 +24,4 @@ title: Home
 </div>
       
 
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/modal.js"></script>
+<script type="text/javascript" src="/assets/js/modal.js"></script>
